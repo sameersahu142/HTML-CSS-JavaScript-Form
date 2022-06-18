@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Creating Form Using HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <main>
+      <form onsubmit="myFunction(event)">
+        <div>Page - 1</div>
+        <div class="container">
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Name</label>
+            </div>
+            <div class="container-input-double">
+              <input
+                type="text"
+                class="double-input"
+                placeholder="First"
+                id="first_name"
+              />
+              <input
+                type="text"
+                class="double-input"
+                placeholder="Last"
+                id="last_name"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Date of Birth</label>
+            </div>
+            <div class="container-input-single">
+              <input type="date" class="single-input" id="date_of_birth" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Email</label>
+            </div>
+            <div class="container-input-single">
+              <input type="email" class="single-input" id="email" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Father's name</label>
+            </div>
+            <div class="container-input-double">
+              <input
+                type="text"
+                class="double-input"
+                placeholder="First"
+                id="father_first_name"
+              />
+              <input
+                type="text"
+                class="double-input"
+                placeholder="Last"
+                id="father_last_name"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Mother's name</label>
+            </div>
+            <div class="container-input-double">
+              <input
+                type="text"
+                class="double-input"
+                placeholder="First"
+                id="mother_first_name"
+              />
+              <input
+                type="text"
+                class="double-input"
+                placeholder="Last"
+                id="mother_last_name"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Gender</label>
+            </div>
+            <input type="radio" id="gender" name="gender" />
+            <label for="html">M</label><br />
+            <input type="radio" name="gender" />
+            <label for="css">F</label><br />
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Nationality</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="nationality" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Home Address</label>
+            </div>
+            <div class="container-input-single">
+              <input
+                type="text"
+                class="single-input"
+                placeholder="Street Address"
+                id="street_address"
+              />
+            </div>
+            <div class="container-input-double-home">
+              <input
+                type="text"
+                class="double-input"
+                placeholder="City"
+                id="city"
+              />
+              <input
+                type="text"
+                class="double-input"
+                placeholder="Country"
+                id="country"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Telephone - Home</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="telephone_home" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Telephone - Mobile</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="telephone_mobile" />
+            </div>
+          </div>
+        </div>
+        <div>Page - 2</div>
+        <div class="container">
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">HSC Institution name</label>
+            </div>
+            <div class="container-input-single">
+              <input
+                type="text"
+                class="single-input"
+                id="HSC_institution_name"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label-board">
+              <label class="container-name">HSC Board</label>
+              <label class="container-label-board-option"
+                >(CBSC / ICSC / State board)</label
+              >
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="HSC_board" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Score in HSC in percentage</label>
+            </div>
+            <div class="container-input-single">
+              <input
+                type="text"
+                class="single-input"
+                id="HSC_score_in_percentage"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">SSC Institution name</label>
+            </div>
+            <div class="container-input-single">
+              <input
+                type="text"
+                class="single-input"
+                id="SSC_institution_name"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label-board">
+              <label class="container-name">SSC Board</label>
+              <label class="container-label-board-option"
+                >(CBSC / ICSC / State board)</label
+              >
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="SSC_board" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Score in SSC in percentage</label>
+            </div>
+            <div class="container-input-single">
+              <input
+                type="text"
+                class="single-input"
+                id="SSC_score_in_percentage"
+              />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Currently pursuing</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="currently_pursuing" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name"
+                >Current educational institution name</label
+              >
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="current_education" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Overall percentage</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="overall_percentage" />
+            </div>
+          </div>
+
+          <div class="each-field">
+            <div class="container-label">
+              <label class="container-name">Current backlogs if any</label>
+            </div>
+            <div class="container-input-single">
+              <input type="text" class="single-input" id="current_backlogs" />
+            </div>
+          </div>
+        </div>
+        <div>Page - 3</div>
+        <div class="container">
+          <div class="each-field-3">
+            <div class="container-label">
+              <label class="container-name"
+                >Recent passport size photograph</label
+              >
+              <label class="container-name-small"
+                >(image size less than 4MB)</label
+              >
+            </div>
+            <div class="container-input-file">
+              <input type="file" id="passport" />
+            </div>
+          </div>
+
+          <div class="each-field-3">
+            <div class="container-label">
+              <label class="container-name">HSC mark sheet</label>
+              <label class="container-name-small"
+                >(image, PDF or docs size less than 4MB)</label
+              >
+            </div>
+            <div class="container-input-file">
+              <input type="file" id="HSC_mark" />
+            </div>
+          </div>
+
+          <div class="each-field-3">
+            <div class="container-label">
+              <label class="container-name">SSC mark sheet</label>
+              <label class="container-name-small"
+                >(image, PDF or docs size less than 4MB)</label
+              >
+            </div>
+            <div class="container-input-file">
+              <input type="file" id="SSC_mark" />
+            </div>
+          </div>
+
+          <div class="each-field-3">
+            <div class="container-label">
+              <label class="container-name"
+                >All semesters mark sheet in a single PDF or docs</label
+              >
+              <label class="container-name-small"
+                >(file size less than 10MB)</label
+              >
+            </div>
+            <div class="container-input-file">
+              <input type="file" id="all_semesters_mark" />
+            </div>
+          </div>
+
+          <div>
+            <input type="submit" value="submit" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
